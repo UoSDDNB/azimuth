@@ -32,7 +32,7 @@ RunAzimuth.Seurat <- function(
   k.weight = 50,
   n.trees = 20,
   mapping.score.k = 100,
-  homologs.file = '/scratch/ojlr1u20/azimuth_references/homologs.rds'
+  homologs.file = '/scratch/ojlr1u20/azimuth_references/homologs.rds',
   ...
 ) {
   CheckDots(...)
