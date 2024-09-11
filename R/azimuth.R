@@ -100,7 +100,7 @@ RunAzimuth.Seurat <- function(
     query <- ConvertGeneNames(
       object = query,
       reference.names = rownames(x = reference),
-      homolog.table = 'https://seurat.nygenome.org/azimuth/references/homologs.rds'
+      homolog.table = '/scratch/ojlr1u20/azimuth_references/homologs.rds'
     )
     
     # Calculate nCount_RNA and nFeature_RNA if the query does not
