@@ -31,7 +31,8 @@ RunAzimuth.Seurat <- function(
   assay = NULL,
   k.weight = 50,
   n.trees = 20,
-  mapping.score.k = 100, 
+  mapping.score.k = 100,
+  homologs.file = '/scratch/ojlr1u20/azimuth_references/homologs.rds'
   ...
 ) {
   CheckDots(...)
@@ -100,7 +101,7 @@ RunAzimuth.Seurat <- function(
     query <- ConvertGeneNames(
       object = query,
       reference.names = rownames(x = reference),
-      homolog.table = '/scratch/ojlr1u20/azimuth_references/homologs.rds'
+      homolog.table = homologs.file
     )
     
     # Calculate nCount_RNA and nFeature_RNA if the query does not
